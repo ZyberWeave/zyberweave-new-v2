@@ -9,27 +9,27 @@ export default function HeroSection() {
         <div className="flex flex-col justify-center space-y-4">
           <div className="space-y-2">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">
-              Connect. Create. Succeed.
+              Digital Excellence. Delivered.
             </h1>
             <p className="max-w-[600px] text-blue-100 md:text-xl">
-              The premier freelancing platform connecting talented professionals with businesses worldwide. 
-              Find your next project or hire the perfect freelancer.
+              We're a full-service digital agency specializing in web design, development, branding, and digital marketing. 
+              Transform your business with our creative solutions.
             </p>
           </div>
           <div className="flex flex-col gap-2 min-[400px]:flex-row">
             <Button asChild className="bg-white text-blue-900 hover:bg-blue-50">
-              <Link href="#contact">Find Freelancers</Link>
+              <Link href="#contact">Start Your Project</Link>
             </Button>
             <Button asChild variant="outline" className="border-white text-white hover:bg-white hover:text-blue-900">
-              <Link href="#services">Start Freelancing</Link>
+              <Link href="#services">Our Services</Link>
             </Button>
           </div>
         </div>
         <Image
-          src="https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg"
+          src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg"
           width="600"
           height="400"
-          alt="Freelancer working on laptop"
+          alt="Digital agency team working"
           className="mx-auto aspect-video overflow-hidden rounded-xl object-cover sm:w-full lg:order-last"
         />
       </div>

@@ -10,7 +10,7 @@ export default function SiteHeader({ onLogin }: SiteHeaderProps) {
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="text-2xl font-bold">
-          FreelanceHub
+          DigitalCraft Agency
         </Link>
         <nav className="flex items-center space-x-4">
           <Link href="#services" className="text-sm font-medium hover:underline">
@@ -19,8 +19,8 @@ export default function SiteHeader({ onLogin }: SiteHeaderProps) {
           <Link href="#contact" className="text-sm font-medium hover:underline">
             Contact
           </Link>
-          <Button onClick={onLogin}>
-            Sign In
+          <Button asChild>
+            <Link href="/admin">Admin Panel</Link>
           </Button>
         </nav>
       </div>
