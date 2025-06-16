@@ -79,7 +79,6 @@ export default function SiteHeader({ onLogin }: SiteHeaderProps) {
           </nav>
         </div>
       )}
-      </div>
     </header>
   )
 }
