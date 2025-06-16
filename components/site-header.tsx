@@ -1,12 +1,16 @@
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 
-export default function SiteHeader() {
+interface SiteHeaderProps {
+  onLogin: () => void
+}
+
+export default function SiteHeader({ onLogin }: SiteHeaderProps) {
   return (
     <header className="sticky top-0 z-40 w-full border-b bg-background">
       <div className="container flex h-16 items-center justify-between">
         <Link href="/" className="text-2xl font-bold">
-          Your Agency
+          FreelanceHub
         </Link>
         <nav className="flex items-center space-x-4">
           <Link href="#services" className="text-sm font-medium hover:underline">
@@ -15,8 +19,8 @@ export default function SiteHeader() {
           <Link href="#contact" className="text-sm font-medium hover:underline">
             Contact
           </Link>
-          <Button asChild>
-            <Link href="#contact">Get a Quote</Link>
+          <Button onClick={onLogin}>
+            Sign In
           </Button>
         </nav>
       </div>
